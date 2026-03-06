@@ -9,10 +9,9 @@ def main():
     screen = pygame.display.set_mode((1080, 1080), HWSURFACE | DOUBLEBUF | RESIZABLE)
     fake_screen = screen.copy()
     font = pygame.font.SysFont(name="mechanical", size=48)
-    pic = pygame.surface.Surface((50, 500))
-    text = font.render("Aim train", True, (255, 255, 0))
-    screen.blit(text, dest=(300, 100))
-    pic.fill((255, 100, 200))
+    text = font.render("Aim trainer", True, (255, 255, 0))
+    screen.blit(text, dest=(400, 0))
+
 
     while True:
         for event in pygame.event.get():
@@ -23,7 +22,7 @@ def main():
 
         screen.fill((0, 0, 0))
         fake_screen.fill('black')
-        fake_screen.blit(pic, (100, 100))
+        pygame.draw.circle(surface=fake_screen, color=(255, 0, 255), center=(300, 150), radius=100)
         fake_screen.blit(text, (100, 100))
         screen.blit(pygame.transform.scale(fake_screen, screen.get_rect().size), (0, 0))
 
