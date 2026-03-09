@@ -1,5 +1,5 @@
 import pygame
-from ui import menu
+from aim_trainer.ui import menu
 from aim_trainer import run_aim_trainer
 
 def main():
