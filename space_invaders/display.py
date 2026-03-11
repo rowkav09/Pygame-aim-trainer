@@ -15,7 +15,7 @@ class Display:
 
 	def show_life(self, life):
 		life_size = 30
-		img_path = "assets/life/life.png"
+		img_path = "img/life/life.png"
 		life_image = pygame.image.load(img_path)
 		life_image = pygame.transform.scale(life_image, (life_size, life_size))
 		life_x = SPACE // 2

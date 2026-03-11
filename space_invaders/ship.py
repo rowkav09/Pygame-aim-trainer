@@ -10,7 +10,7 @@ class Ship(pygame.sprite.Sprite):
 		self.y = pos[1]
 
 		# ship info
-		img_path = 'assets/ship/ship.png'
+		img_path = 'img/ship/ship.png'
 		self.image = pygame.image.load(img_path)
 		self.image = pygame.transform.scale(self.image, (size, size))
 		self.rect = self.image.get_rect(topleft = pos)
