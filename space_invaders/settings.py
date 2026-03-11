@@ -1,4 +1,3 @@
-# /* settings.py
 WIDTH, HEIGHT = 720, 450
 
 SPACE = 30
