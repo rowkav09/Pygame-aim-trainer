@@ -8,7 +8,7 @@ class Bullet(pygame.sprite.Sprite):
 		self.y = pos[1]
 
 		# bullet info
-		img_path = f'assets/bullet/{side}-bullet.png'
+		img_path = f'img/bullet/{side}-bullet.png'
 		self.image = pygame.image.load(img_path)
 		self.image = pygame.transform.scale(self.image, (size, size))
 		self.rect = self.image.get_rect(topleft = pos)

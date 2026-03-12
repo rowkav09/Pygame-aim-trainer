@@ -29,7 +29,7 @@ class Player:
 		current_cell_abs_x, current_cell_abs_y = current_cell_x * tile, current_cell_y * tile
 		if self.left_pressed:
 			if current_cell.walls['left']:
-				if self.x <= current_cell_abs_x + thickness:
+				if self.x <= current_cell_abs_x + thickness + (self.player_size + thickness)/4:
 					self.left_pressed = False
 		if self.right_pressed:
 			if current_cell.walls['right']:
@@ -37,7 +37,7 @@ class Player:
 					self.right_pressed = False
 		if self.up_pressed:
 			if current_cell.walls['top']:
-				if self.y <= current_cell_abs_y + thickness:
+				if self.y <= current_cell_abs_y + thickness + (self.player_size + thickness)/4:
 					self.up_pressed = False
 		if self.down_pressed:
 			if current_cell.walls['bottom']:

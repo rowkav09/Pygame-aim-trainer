@@ -8,11 +8,11 @@ pygame.init()
 pygame.font.init()
 
 
-class Main():
+class Main:
     def __init__(self, screen):
         self.screen = screen
         self.font = pygame.font.SysFont("impact", 30)
-        self.message_color = pygame.Color("cyan")
+        self.message_color = pygame.Color("white")
         self.running = True
         self.game_over = False
         self.FPS = pygame.time.Clock()

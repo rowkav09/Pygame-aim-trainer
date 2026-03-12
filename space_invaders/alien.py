@@ -10,7 +10,7 @@ class Alien(pygame.sprite.Sprite):
 		self.y = pos[1]
 
 		# alien info
-		img_path = f'assets/aliens/{row_num}.png'
+		img_path = f'img/aliens/{row_num}.png'
 		self.image = pygame.image.load(img_path)
 		self.image = pygame.transform.scale(self.image, (size, size))
 		self.rect = self.image.get_rect(topleft = pos)
